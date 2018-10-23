@@ -1,6 +1,4 @@
 language: objective-c
-osx_image: xcode10
-sudo:false
-xcode_project: Demo/Demo.xcodeproj #path to your xcodeproj folder
+xcode_project: Demo/Demo.xcodeproj
 xcode_scheme: Demo
 xcode_destination: platform=macOS
