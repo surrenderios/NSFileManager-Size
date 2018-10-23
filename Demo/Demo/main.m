@@ -11,7 +11,6 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
         
         NSURL *url = [[[NSFileManager defaultManager] URLsForDirectory:NSDesktopDirectory inDomains:NSUserDomainMask] firstObject];
         unsigned long long size = [[NSFileManager defaultManager] sizeAtUrl:url];
