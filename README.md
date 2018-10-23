@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.org/surrenderios](https://travis-ci.org/surrenderios/NSFileManager-Size.svg)
+![](https://travis-ci.com/surrenderios/NSFileManager-Size.svg?branch=master)
 
 
 # NSFileManager-Size
