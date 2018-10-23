@@ -18,6 +18,11 @@ static NSString *kCustomerFileSizeKey = @"kCustomerFileSizeKey";
     return [self sizeAtPath:path];
 }
 
+- (unsigned long long) sizeAtPath:(NSString *)path;
+{
+    return [self sizeAtPath:path useUrl:YES useMDItem:YES];
+}
+
 - (unsigned long long) sizeAtPath:(NSString *)path useUrl:(BOOL)readUrl useMDItem:(BOOL)mdItem;
 {
     if (!path) { return 0; }
@@ -33,7 +38,7 @@ static NSString *kCustomerFileSizeKey = @"kCustomerFileSizeKey";
     {
         NSURL *url = [NSURL fileURLWithPath:path];
         [url getResourceValue:&fileSize forKey:NSURLFileSizeKey error:nil];
-        if ([fileSize longLongValue] != 0){
+        if ([fileSize longLongValue] != 0) {
             [self extended2WithPath:path key:kCustomerFileSizeKey value:fileSize];
             return [fileSize longLongValue];
         }
@@ -57,18 +62,13 @@ static NSString *kCustomerFileSizeKey = @"kCustomerFileSizeKey";
             return [fileSize longLongValue];
         }
     }
-
+    
     //最后使用遍历
     fileSize = [NSNumber numberWithUnsignedLongLong:[self fileSizeAtPath:path diskMode:YES]];
     if ([fileSize longLongValue] != 0 ) {
         [self extended2WithPath:path key:kCustomerFileSizeKey value:fileSize];
     }
     return [fileSize longLongValue];
-}
-
-- (unsigned long long) sizeAtPath:(NSString *)path;
-{
-    return [self sizeAtPath:path useUrl:YES useMDItem:YES];
 }
 
 
