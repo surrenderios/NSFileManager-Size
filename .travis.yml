@@ -1,4 +1,4 @@
 language: objective-c
-xcode_project:Demo.xcodeproj # path to your xcodeproj folder
+xcode_project:./Demo.xcodeproj # path to your xcodeproj folder
 xcode_scheme: Demo
 xcode_destination: platform=macOS
