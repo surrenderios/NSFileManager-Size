@@ -2,13 +2,13 @@
 An Category for NSFileManager to get file size in multi methods
 
 # API
-`/**
+/**
  calculate size at url
 
  @param url file or folder url
  @return size of url
  */
-- (unsigned long long) sizeAtUrl:(NSURL *)url;
+`- (unsigned long long) sizeAtUrl:(NSURL *)url;`
 
 
 /**
@@ -17,7 +17,7 @@ An Category for NSFileManager to get file size in multi methods
  @param path file or folder path
  @return size of path
  */
-- (unsigned long long) sizeAtPath:(NSString *)path;
+`- (unsigned long long) sizeAtPath:(NSString *)path;`
 
 
 /**
@@ -28,5 +28,5 @@ An Category for NSFileManager to get file size in multi methods
  @param mdItem if use mdItem's size attribute
  @return size of path
  */
-- (unsigned long long) sizeAtPath:(NSString *)path useUrl:(BOOL)readUrl useMDItem:(BOOL)mdItem;`
+`- (unsigned long long) sizeAtPath:(NSString *)path useUrl:(BOOL)readUrl useMDItem:(BOOL)mdItem;`
 
