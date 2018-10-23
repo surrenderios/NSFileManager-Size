@@ -1,4 +1,6 @@
-[![Build Status] (https://travis-ci.com/surrenderios/NSFileManager-Size.svg?branch=master)
+
+[![Build Status](https://travis-ci.org/surrenderios](https://travis-ci.org/surrenderios/NSFileManager-Size.svg)
+
 
 # NSFileManager-Size
 An Category for NSFileManager to get file size in multi methods
