@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FAC9E402217EAF0200D252AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC9E401217EAF0200D252AA /* main.m */; };
 		FAC9E40A217EAF1B00D252AA /* NSFileManager+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC9E409217EAF1B00D252AA /* NSFileManager+Size.m */; };
+		FAC9E412217ECB9200D252AA /* DemoTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC9E411217ECB9200D252AA /* DemoTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,10 +29,20 @@
 		FAC9E401217EAF0200D252AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FAC9E408217EAF1B00D252AA /* NSFileManager+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+Size.h"; path = "../NSFileManager+Size.h"; sourceTree = "<group>"; };
 		FAC9E409217EAF1B00D252AA /* NSFileManager+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+Size.m"; path = "../NSFileManager+Size.m"; sourceTree = "<group>"; };
+		FAC9E40F217ECB9200D252AA /* DemoTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC9E411217ECB9200D252AA /* DemoTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoTest.m; sourceTree = "<group>"; };
+		FAC9E413217ECB9200D252AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FAC9E3FB217EAF0200D252AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC9E40C217ECB9200D252AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,6 +58,7 @@
 				FAC9E408217EAF1B00D252AA /* NSFileManager+Size.h */,
 				FAC9E409217EAF1B00D252AA /* NSFileManager+Size.m */,
 				FAC9E400217EAF0200D252AA /* Demo */,
+				FAC9E410217ECB9200D252AA /* DemoTest */,
 				FAC9E3FF217EAF0200D252AA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				FAC9E3FE217EAF0200D252AA /* Demo */,
+				FAC9E40F217ECB9200D252AA /* DemoTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +78,15 @@
 				FAC9E401217EAF0200D252AA /* main.m */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		FAC9E410217ECB9200D252AA /* DemoTest */ = {
+			isa = PBXGroup;
+			children = (
+				FAC9E411217ECB9200D252AA /* DemoTest.m */,
+				FAC9E413217ECB9200D252AA /* Info.plist */,
+			);
+			path = DemoTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +109,23 @@
 			productReference = FAC9E3FE217EAF0200D252AA /* Demo */;
 			productType = "com.apple.product-type.tool";
 		};
+		FAC9E40E217ECB9200D252AA /* DemoTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC9E414217ECB9200D252AA /* Build configuration list for PBXNativeTarget "DemoTest" */;
+			buildPhases = (
+				FAC9E40B217ECB9200D252AA /* Sources */,
+				FAC9E40C217ECB9200D252AA /* Frameworks */,
+				FAC9E40D217ECB9200D252AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DemoTest;
+			productName = DemoTest;
+			productReference = FAC9E40F217ECB9200D252AA /* DemoTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -97,6 +136,9 @@
 				ORGANIZATIONNAME = Starcor;
 				TargetAttributes = {
 					FAC9E3FD217EAF0200D252AA = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					FAC9E40E217ECB9200D252AA = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
@@ -114,9 +156,20 @@
 			projectRoot = "";
 			targets = (
 				FAC9E3FD217EAF0200D252AA /* Demo */,
+				FAC9E40E217ECB9200D252AA /* DemoTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAC9E40D217ECB9200D252AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAC9E3FA217EAF0200D252AA /* Sources */ = {
@@ -125,6 +178,14 @@
 			files = (
 				FAC9E402217EAF0200D252AA /* main.m in Sources */,
 				FAC9E40A217EAF1B00D252AA /* NSFileManager+Size.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC9E40B217ECB9200D252AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC9E412217ECB9200D252AA /* DemoTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +325,40 @@
 			};
 			name = Release;
 		};
+		FAC9E415217ECB9200D252AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D78DLR6545;
+				INFOPLIST_FILE = DemoTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.starcor.DemoTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAC9E416217ECB9200D252AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D78DLR6545;
+				INFOPLIST_FILE = DemoTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.starcor.DemoTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -281,6 +376,15 @@
 			buildConfigurations = (
 				FAC9E406217EAF0200D252AA /* Debug */,
 				FAC9E407217EAF0200D252AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC9E414217ECB9200D252AA /* Build configuration list for PBXNativeTarget "DemoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC9E415217ECB9200D252AA /* Debug */,
+				FAC9E416217ECB9200D252AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
