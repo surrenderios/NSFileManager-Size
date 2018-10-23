@@ -306,7 +306,7 @@
 		FAC9E406217EAF0200D252AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D78DLR6545;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -317,7 +317,7 @@
 		FAC9E407217EAF0200D252AA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D78DLR6545;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -328,9 +328,11 @@
 		FAC9E415217ECB9200D252AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = D78DLR6545;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DemoTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -339,15 +341,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.starcor.DemoTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		FAC9E416217ECB9200D252AA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = D78DLR6545;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DemoTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -356,6 +361,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.starcor.DemoTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
