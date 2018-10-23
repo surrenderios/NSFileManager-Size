@@ -18,3 +18,5 @@ An Category for NSFileManager to get file size in multi methods
 	return size
 
 
+# Test Add CI
+Just test how to add travis CI, this repo does not have test case
